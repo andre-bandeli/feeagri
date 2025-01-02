@@ -4,8 +4,8 @@ import Home from "./paginas/Home";
 import About from "./paginas/About";
 import Events from "./paginas/Events";
 import Parceiros from "./paginas/Parceiros";
-
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
 

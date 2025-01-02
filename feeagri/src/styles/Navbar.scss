@@ -12,10 +12,13 @@ $secondary-color: white;
   position: relative;
   background: rgba(17, 17, 17, 0.35);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
+  backdrop-filter: blur( 3.5px );
   -webkit-backdrop-filter: blur( 13.5px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   max-height: 50px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
 
 
   .logo img {
@@ -25,11 +28,13 @@ $secondary-color: white;
   .menu {
     display: flex;
     gap: 2rem;
+    margin-right: 50px;
 
     ul {
       list-style: none;
       display: flex;
       gap: 2rem;
+      margin-right: 50px;
     }
 
     ul li {

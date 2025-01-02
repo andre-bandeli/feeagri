@@ -1,3 +1,257 @@
-.Home {
+.stats-section {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  
+    .card {
+      text-align: center;
+      align-items: center;
+      width: 25%;
+      position: relative;
+  
+      h3 {
+        font-size: 2rem;
+        color: #333;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #777;
+      }
+    }
+}
+
+.content {
+    width: 100%;
+    height: 350px;
+
+    display: flex;
+
+    .cardContent {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        margin: auto;
+        background-color: rgb(0, 255, 136);
+        align-items: center;
+        justify-content: center;
+
+        .text {
+          width: 45%;
+          display: flex;
+          height: 80%;
+          align-items: center;
+
+          h2, h3 {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: normal;
+          }
+
+          p {
+            font-size: 1rem;
+            line-height: 1.7rem;
+          }
+        }
+    }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+
+  .textContainer {
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 75px;
+      font-weight: normal;
+    }
+  }
+
+  .separador {
+    width: 100%;
+    height: 50px;
     background-color: black;
+  }
+}
+
+.cards-slick {
+  width: 95%;
+  margin-left: 5%;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-top: 50px;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card {
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    height: 390px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+    img {
+      max-width: 100%;
+      height: 100%;
+    }
+  
+    h3 {
+      font-size: 2rem;
+      margin-top: -150px;
+      margin-left: 25px;
+      color: #fff;
+      position: absolute;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      color: #ccc;
+      margin-left: 25px;
+      margin-top: -100px;
+      position: absolute;
+    }
+  }
+  
+  .slick-dots {
+    margin: 0; /* Remove margens extras */
+    bottom: 10px; /* Ajuste a distância do fundo do carrossel */
+    display: flex;
+    margin-top: -330px;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as bolinhas */
+  }
+    
+}
+
+.congressos-section {
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+
+  .congressos-content {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    h2 {
+      font-size: 4rem;
+      color: #333;
+      width: 55%;
+      font-weight: normal;
+
+      strong {
+        color: #006400; // Cor destaque para palavras
+      }
+    }
+
+    p {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #222222;
+      width: 45%;
+      line-height: 1.3;
+
+      strong {
+        font-size: 1.7rem;
+        line-height: 3rem;
+      }
+    }
+
+    .congressos-footer {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      font-size: 0.9rem;
+      margin-top: 25px;
+      color: #888;
+
+      span {
+        &:not(:last-child)::after {
+          content: " | ";
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .congressos-images {
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+
+    .main-image {
+      width: 60%;
+      img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+      }
+    }
+
+    .side-images {
+      display: flex;
+      gap: 30px;
+      width: 50%;
+
+      img {
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.contadorSection {
+  width: 100%;
+  height: 450px;
+  background-color: rgb(27, 27, 27);
+  align-items: center;
+  display: inline-block;
+  margin-top: 150px;
+  background-image: url(./back2.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+  h2 {
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 100px;
+
+    strong {
+       color: yellow;
+    }
+  }
+
+  h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: normal;
+  }
 }
