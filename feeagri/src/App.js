@@ -3,17 +3,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./paginas/Home";
 import About from "./paginas/About";
 import Events from "./paginas/Events";
-import Colaboratory from "./paginas/Colaboratory";
+import Parceiros from "./paginas/Parceiros";
 
-const App = () => (
-  <Router>
+
+
+function App() {
+
+  return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/eventos" element={<Events />} />
-      <Route path="/parceiros" element={<Colaboratory />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Events" element={<Events />} />
+      <Route path="/Parceiros" element={<Parceiros />} />
     </Routes>
-  </Router>
-);
+  );
+}
 
 export default App;
