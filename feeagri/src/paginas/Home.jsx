@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       
       {/* <div className="stats-section">
         <div className="card">
