@@ -10,7 +10,9 @@ import Imagem3 from '../assets/3.jpg'
 import Imagem4 from '../assets/4.jpg'
 import Imagem5 from '../assets/5.jpg'
 import Imagem6 from '../assets/6.jpg'
+import abeag from '../assets/abeag.png'
 import Contador from "../componentes/Contador";
+import Footer from "../componentes/Footer";
 
 export default function Home() {
 
@@ -45,10 +47,9 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Hero />
+      {/* <Hero /> */}
       
-      {/* Seção de Cards */}
-      <div className="stats-section">
+      {/* <div className="stats-section">
         <div className="card">
           <h3>+40 mil</h3>
           <p>Alunos</p>
@@ -65,12 +66,10 @@ export default function Home() {
           <h3>+10</h3>
           <p>Anos</p>
         </div>
-      </div>
-      {/* Fim Seção de Cards */}
+      </div> */}
 
-      {/* Seção de Sobre */}
-      <div className="content">
-        <div className="cardContent">
+      {/* <div className="content"> */}
+        {/* <div className="cardContent">
           <div className="text">
             <h2>Sobre a <strong>FEEAGRI</strong></h2>
           </div>
@@ -79,10 +78,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Fim Seção de Sobre */}
 
       <main>
-        {/* Seção de Sobre */}
+
         <div className="container">
 
             <div className="textContainer">
@@ -155,7 +153,6 @@ export default function Home() {
           <Contador />
         </div>
 
-          {/* Seção de Sobre */}
       <div className="content">
         <div className="cardContent">
           <div className="text">
@@ -166,11 +163,53 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Fim Seção de Sobre */}
-          
-      {/* Fim Seção de Sobre */}
-      </main>
 
+       <div className="parceiros-section">
+          <div className="parceiros-content">
+            <div className="parceiros-texto">
+              <h2>Nossos Parceiros</h2>
+              <p>Contamos com o apoio de diversas instituições e empresas que acreditam na nossa missão de promover a engenharia agrícola e ambiental.</p>
+            </div>
+            <div className="parceiros-imagem">
+              <img src={abeag} alt="Parceiros" />
+            </div>
+          </div>
+        </div>
+
+        <div className="contato-section">
+          <h2>Entre em Contato</h2>
+          <div className="contato-content">
+            <div className="contato-links">
+              <h3>Redes Sociais</h3>
+              <ul>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              </ul>
+            </div>
+            <div className="contato-form">
+              <h3>Envie uma mensagem</h3>
+              <form>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="telefone">Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </main> */}
+    {/* < Footer /> */}
 
     </div>
   );
