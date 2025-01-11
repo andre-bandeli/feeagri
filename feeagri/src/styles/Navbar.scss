@@ -94,9 +94,9 @@
 }
 
 /* Estilo Responsivo (Mobile) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar {
-    width: 90%;
+
 
   .menu-links {
     position: absolute;
@@ -130,7 +130,7 @@
     justify-content: space-between;
     width: 30px;
     height: 21px;
-    margin-right: 25px;
+    margin-right: 75px;
     cursor: pointer;
   
     .bar {
@@ -147,4 +147,23 @@
     }
   }
 }
+}  
+
+
+/* Estilo Responsivo (Mobile) */
+@media screen and (max-width: 550px) {
+  .navbar {
+
+    .logo {
+
+      h2 {
+        margin-top: 25px;
+        font-size: 1.2rem;
+      }
+      h3 {
+        display: none;
+      }
+    }
+
+  }
 }  

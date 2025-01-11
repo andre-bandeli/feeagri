@@ -78,7 +78,7 @@ export default function Home() {
                 <h3>Nossas atividades</h3>
                 <h2>A FEEAGRI atua na representação e defesa dos estudantes promovendo a valorização dessas áreas.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem alias. Aperiam ducimus, debitis autem atque voluptatibus sunt officia placeat reiciendis est soluta, earum optio nisi expedita ut quod. Placeat.</p>
-                <span>by Cassidy Williams • December 20, 2024</span>
+                <span>by FEEAGRI • December 20, 2024</span>
               </div>
               <img src={Imagem1} alt="Main Feature" />
             </div>
@@ -87,17 +87,17 @@ export default function Home() {
               <div className="card">
                 <img src={Imagem2} alt="Feature 2" />
                 <h3>Organização de Eventos Acadêmicos</h3>
-                <p>Come and join 150M developers on GitHub with the new free tier for GitHub Copilot in VS Code.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore sapiente porro reiciendis vitae dolores perspiciatis ducimus hic nisi ex est optio molestias facere illum, nemo iure! Voluptatem, facere nam.</p>
               </div>
               <div className="card">
                 <img src={Imagem3} alt="Feature 3" />
                 <h3>Incentivo à Pesquisa e Extensão</h3>
-                <p>Whether you’re hunting for the perfect gift, find something for every dev!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor soluta possimus beatae. Porro, fugit. Laboriosam possimus dolorem incidunt enim ratione libero minus aperiam soluta autem, accusantium dolores itaque totam?</p>
               </div>
               <div className="card">
                 <img src={Imagem4} alt="Feature 4" />
                 <h3>Capacitação e Desenvolvimento</h3>
-                <p>The Gaady Awards are like the Emmy Awards for digital accessibility.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, eaque autem in similique iste, dolores quasi laudantium ullam, illo ut! Facere saepe quisquam, quo officia optio accusamus quae? Ipsam?</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
 
         <div className="contadorSection">
           <h2><strong>XXXVIII</strong> CONEEAGRI & II ENPEAG</h2>
-          <h3>Local: UFPel - Pelotas/RS</h3>
+          <h3>Local: <strong>UFPEL</strong> -  Universidade Federal de Pelotas - Pelotas/RS <br />Data: de X a Y de outubro de 2025</h3>
           <Contador />
         </div>
 

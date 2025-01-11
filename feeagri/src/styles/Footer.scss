@@ -1,7 +1,6 @@
 .footer {
     background-color: #141414;
     color: #fff;
-    padding: 40px 20px;
     text-align: left;
     display: inline-block;
     width: 100%;
@@ -10,12 +9,13 @@
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      width: 90%;
+      width: 83%;
       margin: auto;
   
       .footer-column {
         flex: 1;
         height: 250px;
+        margin-top: 25px;
   
         h4 {
           font-size: 18px;

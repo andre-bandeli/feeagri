@@ -39,3 +39,25 @@
     }
   }
   
+
+  @media (max-width: 550px) {
+    .contador {
+      
+      .time-wrapper {
+        width: 70%;
+        margin-left: -100px;
+      
+      
+        .time-box {
+        
+          margin-left: 0;
+          padding: 10px;
+          left: 0;
+          h2 {
+            font-size: 1rem;
+          }
+        }
+        
+      }
+    }
+  }

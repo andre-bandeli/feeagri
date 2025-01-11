@@ -55,6 +55,17 @@
 }
 
 /* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .Hero {
+    
+  }
+
+  .Hero__content {
+    margin-left: -75px;
+  }
+}
+
+/* Responsividade para tablets */
 @media (max-width: 768px) {
   .Hero {
     
@@ -75,7 +86,7 @@
 }
 
 /* Responsividade para celulares */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .Hero {
     
   }
@@ -83,13 +94,15 @@
   .Hero__content {
     bottom: 5px;
     left: 5px;
+    margin-left: -100px;
 
     h1 {
-      font-size: 1.2rem;
+      font-size: 12px;
+      line-height: 40px;
     }
 
     p {
-      font-size: 0.75rem;
+
     }
   }
 }
