@@ -10,13 +10,26 @@
   width: 100%;
   z-index: 10;
   
-  .logo img {
-    width: 100px;
+  .logo { 
+    
+    height: 70px;
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+      }
+    h3 {
+      font-size: .9rem;
+      font-weight: 300;
+      margin-top: 0;
+      color: rgb(230, 230, 230);
+    }
   }
 
   .menu-links {
     display: flex;
-    width: 35%;
+    width: 40%;
     height: 50px;
     gap: 2rem;
     margin-right: 0;
@@ -34,7 +47,7 @@
 
     ul li a {
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: white;
       font-weight: 200;
       letter-spacing: 1px;

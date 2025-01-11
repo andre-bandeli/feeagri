@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Coluna Institucional */}
         <div className="footer-column">
           <h4>Institucional</h4>
           <ul>
@@ -15,8 +14,6 @@ export default function Footer() {
             <li><a href="#!">Termos de Uso</a></li>
           </ul>
         </div>
-
-        {/* Coluna Sobre Nós */}
         <div className="footer-column">
           <h4>Sobre Nós</h4>
           <ul>
@@ -26,8 +23,6 @@ export default function Footer() {
             <li><a href="#!">Blog</a></li>
           </ul>
         </div>
-
-        {/* Coluna Ajuda */}
         <div className="footer-column">
           <h4>Ajuda</h4>
           <ul>
@@ -37,8 +32,6 @@ export default function Footer() {
             <li><a href="#!">Feedback</a></li>
           </ul>
         </div>
-
-        {/* Coluna Redes Sociais */}
         <div className="footer-column">
           <h4>Redes Sociais</h4>
           <ul>
@@ -49,8 +42,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
-      {/* Linha de Copyright */}
       <div className="footer-copyright">
         <p>&copy; {new Date().getFullYear()} FEEAGRI. Todos os direitos reservados. Website desenvolvido por André Bandeli</p>
       </div>
