@@ -21,6 +21,11 @@
       h2 {
         color: white;
         margin-bottom: 0px;
+
+        img {
+          width: 30px;
+          margin-left: 15px;
+        }
       }
 
       p {
@@ -74,4 +79,9 @@
       }
     }
   }
-  
+
+@media (max-width: 550px) {
+  .Newsletter {
+    height: 650px;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../componentes/Header";
 import "../styles/Home.scss";
 import Hero from "../componentes/Hero";
+import { Link } from 'react-router-dom';
 import StatsCounter from "../componentes/StatsCounter";
 import Imagem1 from '../assets/16.jpg';
 import Imagem2 from '../assets/19.jpg';
@@ -15,6 +16,7 @@ import crea from '../assets/crea.png';
 import Contador from "../componentes/Contador";
 import Footer from "../componentes/Footer";
 import NewsletterComponent from "../componentes/NewsletterComponent";
+import '../styles/buttons.scss'
 
 export default function Home() {
   const settings = {
@@ -61,7 +63,7 @@ export default function Home() {
           </div>
           <div className="text">
             <p>A FEEAGRI é a Federação Brasileira dos Estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas. Representando estudantes de todo o país, a FEEAGRI promove a integração, o fortalecimento da formação acadêmica e a valorização profissional dessas áreas, organizando eventos, projetos e iniciativas que visam o desenvolvimento sustentável e o protagonismo jovem no setor agroambiental.</p>
-            <button><a href="">leia mais</a></button>
+            <Link to={`/about`} className="">Saiba mais</Link>
           </div>
         </div>
       </div>
@@ -107,6 +109,7 @@ export default function Home() {
           <h2><strong>XXXVIII</strong> CONEEAGRI & II ENPEAG</h2>
           <h3>Local: <strong>UFPEL</strong> -  Universidade Federal de Pelotas - Pelotas/RS <br />Data: de X a Y de outubro de 2025</h3>
           <Contador />
+          <button className="button_secundary_red">Inscreva-se [em breve]</button>
         </div>
 
         <div className="congressos-section">
@@ -161,7 +164,7 @@ export default function Home() {
                   <label htmlFor="mensagem">Mensagem</label>
                   <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit" className="button_primary">Enviar</button>
               </form>
             </div>
           </div>

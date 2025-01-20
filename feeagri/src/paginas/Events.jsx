@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import Header from "../componentes/Header";
 import "../styles/HeaderSecundario.scss";
 import "../styles/Events.scss";
@@ -13,6 +15,47 @@ import Imagem5 from '../assets/c4.png';
 import Imagem6 from '../assets/c5.jpeg';
 
 export default function Events() {
+
+  const congressos = [
+      {
+        image: Imagem1,
+        title: 'Federação Brasileira dos Estudantes de Engenharia Agrícola',
+        description: 'Somos uma organização estudantil que promove a união e o fortalecimento dos estudantes dessas áreas.',
+        slug: 'federacao-brasileira',
+      },
+      {
+        image: Imagem2,
+        title: 'O Futuro da Engenharia Agrícola!',
+        description: 'Juntos, impulsionamos a inovação no campo e promovemos a sustentabilidade!',
+        slug: 'futuro-engenharia-agricola',
+      },
+      {
+        image: Imagem3,
+        title: 'XXXVII CONEEAGRI e I ENPEAG',
+        description: 'Participe do evento e conecte-se com futuros engenheiros de todo o Brasil.',
+        slug: 'coneeagri-enpeag',
+      },
+      {
+        image: Imagem1,
+        title: 'Federação Brasileira dos Estudantes de Engenharia Agrícola',
+        description: 'Somos uma organização estudantil que promove a união e o fortalecimento dos estudantes dessas áreas.',
+        slug: 'federacao-brasileira',
+      },
+      {
+        image: Imagem2,
+        title: 'O Futuro da Engenharia Agrícola!',
+        description: 'Juntos, impulsionamos a inovação no campo e promovemos a sustentabilidade!',
+        slug: 'futuro-engenharia-agricola',
+      },
+      {
+        image: Imagem3,
+        title: 'XXXVII CONEEAGRI e I ENPEAG',
+        description: 'Participe do evento e conecte-se com futuros engenheiros de todo o Brasil.',
+        slug: 'coneeagri-enpeag',
+      },
+    ];
+  
+    
   return (
     <div>
       <Header />
@@ -24,7 +67,7 @@ export default function Events() {
         </div>
         <div className="container">
           <h2>Congressos</h2>
-          <p>A FEEAGRI foi criada com o propósito de unir e representar os estudantes de Agronomia em nível nacional, oferecendo uma plataforma para o desenvolvimento e a valorização dessa importante área do conhecimento. A organização visa promover debates, eventos e ações que impactam positivamente a sociedade, além de fomentar a troca de experiências, a capacitação técnica e o fortalecimento da atuação dos futuros profissionais do setor. A FEEAGRI busca, ainda, influenciar as políticas públicas relacionadas ao campo da Agronomia e contribuir para a inovação e sustentabilidade no setor agrícola, tornando-se uma referência na formação de líderes comprometidos com o desenvolvimento social e ambiental.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse obcaecati cupiditate quod recusandae, mollitia molestiae, officiis consequuntur error est perferendis blanditiis deserunt exercitationem veritatis eligendi! Odio rerum eum unde!</p>
         </div>
       </div>
       <div className="contadorSection2">
@@ -45,31 +88,14 @@ export default function Events() {
           </div>
 
           <div className="featuredSec-secondary">
+          {congressos.map((congresso, index) => (
             <div className="card">
-              <img src={Imagem2} alt="Feature 2" />
-              <h3>XXXVI CONEEAGRI</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, praesentium. Aliquid soluta error itaque consequatur amet ad praesentium voluptas! Praesentium, unde consequatur. Laborum sapiente commodi asperiores autem velit exercitationem officia!</p>
+            <img src={congresso.image} alt={congresso.title} />
+              <h3>{congresso.title}</h3>
+              <p>{congresso.description}</p>
+              <Link to={`/congressos/${congresso.slug}`} className="Hero__button">Saiba mais</Link>
             </div>
-            <div className="card">
-              <img src={Imagem3} alt="Feature 3" />
-              <h3>XXXV CONEEAGRI</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat eligendi aspernatur aliquid perferendis a doloribus doloremque eum culpa recusandae fuga, voluptate eius quidem maiores commodi, aperiam similique sequi reiciendis.</p>
-            </div>
-            <div className="card">
-              <img src={Imagem4} alt="Feature 4" />
-              <h3>XXXV CONEEAGRI</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus odio, molestias voluptatem beatae error animi quisquam cupiditate recusandae. Quae voluptatum repellendus amet exercitationem nobis aliquam asperiores vitae pariatur veniam nulla!</p>
-            </div>
-            <div className="card">
-              <img src={Imagem5} alt="Feature 4" />
-              <h3>XXXIV CONEEAGRI</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloribus distinctio at ut, beatae aperiam soluta incidunt nobis. Deserunt at hic est. Odit fuga, enim tempore ut totam quis quia?</p>
-            </div>
-            <div className="card">
-              <img src={Imagem6} alt="Feature 4" />
-              <h3>XXXIII CONEEAGRI</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam beatae nihil quo illo sint cupiditate molestiae! Aliquam totam veritatis tempore, exercitationem, praesentium adipisci repellat reprehenderit, iure aliquid deleniti unde ut.</p>
-            </div>
+           ))}
           </div>
         </div>
       </main>

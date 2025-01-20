@@ -57,4 +57,21 @@
       letter-spacing: 1px;
     }
   }
-  
+
+
+@media (max-width: 550px ) {
+  .footer {
+
+    .footer-container {
+      width: 100%;
+      display: inline-block;
+
+      .footer-column {
+        width: 80%;
+        height: auto;
+        padding: 5px;
+        margin: auto;
+      }
+    }
+  }
+}

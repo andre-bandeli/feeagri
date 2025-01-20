@@ -8,6 +8,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Membros from "./paginas/Membros";
 import Newsletter from "./paginas/Newsletter";
+import SlidePage from "./paginas/secundarias/SlidePage";
+import CongressosPage from "./paginas/secundarias/CongressosCard";
+import Delegacao from "./paginas/Delegacao";
 
 function App() {
 
@@ -15,8 +18,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
+      <Route path="/:slug" element={<SlidePage />} />
       <Route path="/congressos" element={<Events />} />
+      <Route path="/congressos/:slug" element={<CongressosPage />} />
       <Route path="/membros" element={<Membros />} />
+      <Route path="/membros/delegacao" element={<Delegacao />} />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="/newsletter" element={<Newsletter />} />
     </Routes>

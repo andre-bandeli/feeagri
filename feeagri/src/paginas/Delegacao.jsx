@@ -6,9 +6,9 @@ import Footer from '../componentes/Footer'
 import '../styles/buttons.scss'
 import { Link } from 'react-router-dom';
 
-import Imagem1 from '../assets/pessoa.jpg'
+import Imagem1 from '../assets/pessoa.jpeg'
 
-const membrosData = [
+const DelegacaoData = [
   {
     nome: "João Silva",
     instituicao: "UFPR",
@@ -53,7 +53,7 @@ const membrosData = [
   },
 ];
 
-const exMembrosData = [
+const exDelegacaoData = [
   {
     nome: "João Silva",
     instituicao: "UFPR",
@@ -164,26 +164,26 @@ const exMembrosData = [
 
 ];
 
-export default function Membros() {
+export default function Delegacao() {
   return (
     <div>
           <Header />
                  <div className="HeaderSecundario">
                    <div className="links">
-                     <h3> <a href="">Home</a> | <a href="">Membros</a></h3>
+                     <h3> <a href="">Home</a> | <a href="">Delegacao</a></h3>
                    </div>
                      <div className="container">
-                     <h2>Conselho Diretivo</h2>
+                     <h2>Delegados de Instituições</h2>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt dolore! Quidem, libero, modi sapiente provident magni reprehenderit ducimus possimus eius suscipit delectus quibusdam dolorum officia velit! Dolor, cumque amet.</p>
-                     <button className='button_primary'><Link to={`/membros/delegacao`} className="">Página de Delegados</Link></button>
+                     <button className='button_primary'><Link to={`/membros`} className="">Retornar</Link></button>
                      </div>
                    </div>
                  <main>
                   <div className="containerCustom">
                   <div className="container">
-          <h2>Gestão 2025</h2>
+          <h2>Delegação 2025</h2>
           <div className="membros">
-            {membrosData.map((membro, index) => (
+            {DelegacaoData.map((membro, index) => (
               <div key={index} className="cardMembro">
                 <img src={membro.foto} alt={membro.nome} className="fotoMembro" />
                 <h4>{membro.nome}</h4>
@@ -192,17 +192,7 @@ export default function Membros() {
               </div>
             ))}
           </div>
-          <h2>Ex membros</h2>
-          <div className="membros">
-            {exMembrosData.map((membro, index) => (
-              <div key={index} className="cardMembro">
-                <img src={membro.foto} alt={membro.nome} className="fotoMembro" />
-                <h4>{membro.nome}</h4>
-                <p>{membro.instituicao}</p>
-                <p>{membro.cargo}</p>
-              </div>
-            ))}
-          </div>
+          
         </div>
                   </div>
                  </main>

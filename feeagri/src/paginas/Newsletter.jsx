@@ -13,7 +13,7 @@ export default function Newsletter() {
               </div>
                 <div className="container">
                 <h2>Acompanhe nossa newsletter</h2>
-                <p>A FEEAGRI foi criada com o propósito de unir e representar os estudantes de Agronomia em nível nacional, oferecendo uma plataforma para o desenvolvimento e a valorização dessa importante área do conhecimento. A organização visa promover debates, eventos e ações que impactam positivamente a sociedade, além de fomentar a troca de experiências, a capacitação técnica e o fortalecimento da atuação dos futuros profissionais do setor. A FEEAGRI busca, ainda, influenciar as políticas públicas relacionadas ao campo da Agronomia e contribuir para a inovação e sustentabilidade no setor agrícola, tornando-se uma referência na formação de líderes comprometidos com o desenvolvimento social e ambiental.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero quibusdam laboriosam ipsum commodi ratione quia corporis facilis eligendi ullam, explicabo neque in minus, voluptatem dolorum. Veniam nulla sint maxime.</p>
                 </div>
               </div>
             <main>
