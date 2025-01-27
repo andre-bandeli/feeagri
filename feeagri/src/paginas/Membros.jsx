@@ -174,7 +174,7 @@ export default function Membros() {
                    </div>
                      <div className="container">
                      <h2>Conselho Diretivo</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt dolore! Quidem, libero, modi sapiente provident magni reprehenderit ducimus possimus eius suscipit delectus quibusdam dolorum officia velit! Dolor, cumque amet.</p>
+                     <p>Conheça as pessoas que contribuem para a consolidação da Federação.</p>
                      <button className='button_primary'><Link to={`/membros/delegacao`} className="">Página de Delegados</Link></button>
                      </div>
                    </div>

@@ -100,11 +100,12 @@
 
   .menu-links {
     position: absolute;
-    top: 50px;
+    top: 58px;
     height: 100vh;
     right: 0;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.979);
+    background-color: rgb(19, 19, 19);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -112,10 +113,21 @@
 
     ul {
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem;
+      width: 80%;
 
       li {
-        margin-top: 30px;
+        margin-top: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgb(77, 77, 77);
+        display: flex;
+        
+
+        a {
+          margin: auto;
+          font-size: 1.5rem;
+          margin-bottom: 25px;
+        }
       }
     }
   }
@@ -144,11 +156,11 @@
       font-size: 1.5rem;
       color: rgb(255, 94, 0);
       z-index: 999;
+      margin-top: -25px;
     }
   }
 }
 }  
-
 
 /* Estilo Responsivo (Mobile) */
 @media screen and (max-width: 550px) {
@@ -164,6 +176,29 @@
         display: none;
       }
     }
+      .menu-links {
+        top: 100px;
+        ul {
+          width: 60%;
+          margin-left: -25px;
+          padding: 0;
+          gap: 50px;
+          li {
 
+  
+            a {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+      .hamburger {
+
+        .close-icon {
+          font-size: 2rem;
+          margin-top: -10px;
+        }
+      }
+    
   }
 }  

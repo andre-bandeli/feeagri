@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../../componentes/Header';
-import '../../styles/SlidePage.scss'
+import '../../styles/SecundaryPage.scss'
+import Footer from '../../componentes/Footer'
 
 import Hero1 from '../../assets/6.jpg';
 import Hero2 from '../../assets/5.jpg';
@@ -39,16 +40,16 @@ export default function SlidePage() {
   return (
     <div>
         <Header />
-        <div className='slidePage'>
+        <div className='secundaryPage'>
         
         </div>
-        <div className="containerSlidePage">
+        <div className="containerSecundaryPage">
             <img src={slide.img} alt="" />
         <h1>{slide.title}</h1>
         <p>{slide.content}</p>
     </div>
     
-     
+    <Footer />
     </div>
   );
 }

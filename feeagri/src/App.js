@@ -11,6 +11,7 @@ import Newsletter from "./paginas/Newsletter";
 import SlidePage from "./paginas/secundarias/SlidePage";
 import CongressosPage from "./paginas/secundarias/CongressosCard";
 import Delegacao from "./paginas/Delegacao";
+import Content from "./paginas/secundarias/Content";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
+      <Route path="/atividades/:slug" element={<Content />} />
       <Route path="/:slug" element={<SlidePage />} />
       <Route path="/congressos" element={<Events />} />
       <Route path="/congressos/:slug" element={<CongressosPage />} />

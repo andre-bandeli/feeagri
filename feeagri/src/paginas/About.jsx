@@ -16,20 +16,53 @@ export default function About() {
         </div>
         <div className="container">
           <h2>Sobre Nós</h2>
-          <p>A FEEAGRI foi criada com o propósito de unir e representar os estudantes de Agronomia em nível nacional, oferecendo uma plataforma para o desenvolvimento e a valorização dessa importante área do conhecimento. A organização visa promover debates, eventos e ações que impactam positivamente a sociedade, além de fomentar a troca de experiências, a capacitação técnica e o </p>
+          <p>Conheça nossa trajetória e compromisso com o fortalecimento da Engenharia Agrícola, promovendo a união entre os estudantes e o desenvolvimento de soluções inovadoras para o setor agrícola no Brasil</p>
         </div>
       </div>
       <main>
         <div className="containerAbout">
           <h2>Quem somos?</h2>
-          <p>A FEEAGRI foi criada com o propósito de unir e representar os estudantes de Agronomia em nível nacional, oferecendo uma plataforma para o desenvolvimento e a valorização dessa importante área do conhecimento. A organização visa promover debates, eventos e ações que impactam positivamente a sociedade, além de fomentar a troca de experiências, a capacitação técnica e o fortalecimento da atuação dos futuros profissionais do setor. Buscamos influenciar políticas públicas relacionadas ao campo da Agronomia e contribuir para a inovação e sustentabilidade no setor agrícola, tornando-nos uma referência na formação de líderes comprometidos com o desenvolvimento social e ambiental.</p>
+          <p>A Federação Brasileira dos Estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas (FEEAGRI) é uma entidade nacional, sem fins lucrativos, que representa os estudantes dessas áreas em todo o Brasil. Atuamos como um elo entre acadêmicos, instituições de ensino e entidades públicas e privadas, promovendo a união, o desenvolvimento acadêmico e a participação ativa de nossos membros em eventos técnicos, científicos e sociais. Com uma estrutura democrática, composta por estudantes eleitos em assembleias gerais realizadas anualmente durante o Congresso Nacional dos Estudantes de Engenharia Agrícola (CONEEAGRI), buscamos garantir que a voz dos futuros engenheiros agrícolas seja ouvida em nível nacional.</p>
           <h2>Nossa Missão, Visão e Valores</h2>
-          <p>Missão: Unir e representar estudantes de Agronomia, promovendo o desenvolvimento acadêmico, técnico e humano por meio de ações que fomentem a formação de profissionais qualificados e comprometidos com o futuro do setor agrícola. Visão: Ser reconhecida como a principal entidade estudantil de Agronomia no Brasil, promovendo a inovação, sustentabilidade e o fortalecimento da atuação profissional no setor.</p>
+          <p> <strong>Missão</strong>: Representar os estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas, promovendo o desenvolvimento acadêmico, profissional e social, por meio da integração entre instituições de ensino e eventos técnico-científicos, sempre visando a formação de profissionais capacitados e conscientes de seu papel na sociedade.</p>
+          <p><strong>Visão</strong>: Ser reconhecida como a principal entidade estudantil de referência nacional na promoção de ações que impactem positivamente a formação dos estudantes de Engenharia Agrícola e áreas correlatas, fortalecendo a união e a representatividade do segmento.</p>
+          <p><strong>Valores</strong>:</p>
+          <ul><li>Compromisso com os estudantes: Trabalhar em prol do desenvolvimento e bem-estar dos nossos membros;
+          </li>
+          <li>
+          Transparência: Gestão participativa e comunicação clara em todas as nossas ações;
+
+          </li>
+          <li>
+          Inovação: Incentivar práticas e soluções modernas no ensino e aplicação da Engenharia Agrícola;
+
+          </li>
+          <li>
+          Sustentabilidade: Promover ações que contribuam para o equilíbrio ambiental e o desenvolvimento sustentável;
+
+          </li>
+          <li>
+          Inclusão: Garantir que todas as vozes sejam ouvidas, respeitando a diversidade de ideias e culturas;
+
+          </li>
+          <li>Excelência acadêmica: Incentivar a busca constante pela qualidade no ensino e pesquisa.
+          </li>
+          </ul>
           <h2>Nossa história</h2>
-          <p>A FEEAGRI foi fundada em [ano de fundação] por um grupo de estudantes de Agronomia que acreditavam na importância de uma representação forte e ativa da classe estudantil. O objetivo inicial era criar uma plataforma que unisse os futuros profissionais da Agronomia em todo o Brasil, promovendo a troca de experiências e o desenvolvimento de ações que impactassem diretamente o setor agrícola e a sociedade. Desde então, a organização tem se dedicado a fortalecer a formação acadêmica e técnica dos estudantes, preparando-os para os desafios do mercado de trabalho.</p>
-          <p>Ao longo dos anos, a FEEAGRI tem se consolidado como um espaço essencial para o aprimoramento das competências dos estudantes. Através de congressos, eventos, workshops e parcerias estratégicas com instituições de ensino, empresas e órgãos governamentais, a FEEAGRI tem proporcionado aos seus membros a oportunidade de aprofundar seus conhecimentos, ampliar seu networking e se engajar ativamente em questões que impactam a Agronomia e o agronegócio nacional.</p>
-          <p>Com o passar do tempo, a FEEAGRI se tornou uma referência na formação de líderes comprometidos com a inovação e a sustentabilidade no setor agrícola. Nossa história é marcada pela constante busca por inovação e pelo compromisso com a educação, com o desenvolvimento social e ambiental, consolidando nossa atuação como uma organização que contribui significativamente para o futuro da Agronomia no Brasil.</p>
+          <p>A FEEAGRI foi fundada com o propósito de unificar os estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas de todo o Brasil, fortalecendo a representatividade de nossas áreas em cenários acadêmicos e profissionais. Desde a sua criação, tem sido protagonista na organização do CONEEAGRI, evento anual que reúne acadêmicos, pesquisadores e profissionais do setor.
+          Ao longo dos anos, expandimos nossa atuação, com a inclusão de delegados de universidades e representantes regionais, promovendo a cooperação entre instituições de ensino superior e fomentando a participação ativa dos estudantes em discussões e projetos de impacto nacional. Hoje, a FEEAGRI é mais do que uma federação estudantil; é uma comunidade vibrante, comprometida com a formação de líderes que transformarão o futuro da engenharia e da sociedade.</p>
+         
         </div>
+        {/* <div className="depoimentos">
+          <div className="imagem">
+
+          </div>
+          <div className="texto">
+            <h2>Rafael Panini</h2>
+            <h3>Engenheiro Agrícola</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi, ullam expedita eligendi earum vero autem praesentium commodi culpa ad! Tempora vero numquam vel omnis mollitia voluptates placeat quam rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam autem, porro fuga numquam quae magnam quia amet dolorum, cupiditate ipsam explicabo non illo! Aliquid cum totam asperiores vel quaerat.</p>
+          </div>
+        </div> */}
       </main>
       <Footer />
     </div>

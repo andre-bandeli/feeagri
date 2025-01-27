@@ -18,6 +18,30 @@ import Footer from "../componentes/Footer";
 import NewsletterComponent from "../componentes/NewsletterComponent";
 import '../styles/buttons.scss'
 
+const cardsData = [
+  {
+    slug: 'representacao-estudantil',
+    title: 'Representatividade estudantil unindo futuros profissionais de todo o Brasil',
+    content: 'A FEEAGRI atua como a voz dos estudantes das Engenharias Agrícola, Agrícola e Ambiental e de Biossistemas, promovendo a união e defendendo os interesses acadêmicos e profissionais em nível nacional [...]',
+    spn: 'by FEEAGRI • December 20, 2024',
+    img: Imagem2,
+  },
+  {
+    slug: 'organizacao-de-eventos',
+    title: 'CONEEAGRI: Um marco na união e na formação dos estudantes de engenharia',
+    content: 'O CONEEAGRI é mais do que um evento: é o ponto de encontro para estudantes e profissionais de todo o Brasil compartilharem conhecimentos, experiências e fortalecerem os laços em prol do desenvolvimento técnico e científico [...]',
+    spn: 'by FEEAGRI • December 20, 2024',
+    img: Imagem3,
+  },
+  {
+    slug: 'capacitacao-e-desenvolvimento',
+    title: 'Capacitação e desenvolvimento para um futuro sustentável no Agro',
+    content: 'Através de iniciativas voltadas à capacitação e desenvolvimento técnico, a FEEAGRI fomenta a formação de profissionais qualificados e conscientes, preparados para enfrentar os desafios da sustentabilidade no agro. Trabalhamos para unir [...]',
+    spn: 'by FEEAGRI • December 20, 2024',
+    img: Imagem4,
+  },
+];
+
 export default function Home() {
   const settings = {
     dots: true,
@@ -52,18 +76,18 @@ export default function Home() {
         </div>
         <div className="card">
           <h3><StatsCounter finalNumber={10} /></h3>
-          <p>Anos de história</p>
+          <p>Anos de História e Contribuição</p>
         </div>
       </div>
 
       <div className="content">
         <div className="cardContent">
-          <div className="text">
-            <h2>Sobre a <strong>FEEAGRI</strong></h2>
+          <div className="text title">
+            <h2>FEEAGRI <br /><strong>NACIONAL</strong></h2>
           </div>
           <div className="text">
-            <p>A FEEAGRI é a Federação Brasileira dos Estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas. Representando estudantes de todo o país, a FEEAGRI promove a integração, o fortalecimento da formação acadêmica e a valorização profissional dessas áreas, organizando eventos, projetos e iniciativas que visam o desenvolvimento sustentável e o protagonismo jovem no setor agroambiental.</p>
-            <Link to={`/about`} className="">Saiba mais</Link>
+            <p>A FEEAGRI foi fundada com o propósito de unificar os estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas de todo o Brasil, fortalecendo a representatividade de nossas áreas em cenários acadêmicos e profissionais. Desde a sua criação, tem atuado na organização do CONEEAGRI, evento anual que reúne acadêmicos, pesquisadores e profissionais do setor.</p>
+            <button className="button_primary"> <Link to={`/about`} className="">Saiba mais</Link> </button>
           </div>
         </div>
       </div>
@@ -78,29 +102,23 @@ export default function Home() {
             <div className="featured-main">
               <div className="featured-main-content">
                 <h3>Nossas atividades</h3>
-                <h2>A FEEAGRI atua na representação e defesa dos estudantes promovendo a valorização dessas áreas.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem alias. Aperiam ducimus, debitis autem atque voluptatibus sunt officia placeat reiciendis est soluta, earum optio nisi expedita ut quod. Placeat.</p>
+
+                <h2>Fortalecendo a união e a representatividade dos estudantes nas Engenharias Agrícola, Agrícola e Ambiental e de Biossistemas.</h2>
+                <p>A Federação se destaca por organizar e apoiar o CONEEAGRI, o maior evento nacional que reúne estudantes de todo o Brasil para compartilhar conhecimentos, experiências e fortalecer os laços entre as instituições de ensino dessas áreas. Nosso compromisso é impulsionar a colaboração e o desenvolvimento técnico-científico, criando um espaço inclusivo para a troca de ideias e a formação de futuros profissionais qualificados.</p>
                 <span>by FEEAGRI • December 20, 2024</span>
               </div>
               <img src={Imagem1} alt="Main Feature" />
             </div>
 
             <div className="featured-secondary">
+            {cardsData.map((card, index) => (
               <div className="card">
-                <img src={Imagem2} alt="Feature 2" />
-                <h3>Organização de Eventos Acadêmicos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore sapiente porro reiciendis vitae dolores perspiciatis ducimus hic nisi ex est optio molestias facere illum, nemo iure! Voluptatem, facere nam.</p>
+                <img src={card.img} alt="Feature 2" />
+                <h3><Link to={`/atividades/${card.slug}`}>{card.title}</Link></h3>
+                <p>{card.content}</p>
+                <span>{card.spn}</span>
               </div>
-              <div className="card">
-                <img src={Imagem3} alt="Feature 3" />
-                <h3>Incentivo à Pesquisa e Extensão</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor soluta possimus beatae. Porro, fugit. Laboriosam possimus dolorem incidunt enim ratione libero minus aperiam soluta autem, accusantium dolores itaque totam?</p>
-              </div>
-              <div className="card">
-                <img src={Imagem4} alt="Feature 4" />
-                <h3>Capacitação e Desenvolvimento</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, eaque autem in similique iste, dolores quasi laudantium ullam, illo ut! Facere saepe quisquam, quo officia optio accusamus quae? Ipsam?</p>
-              </div>
+                 ))}
             </div>
           </div>
         </div>
@@ -113,10 +131,16 @@ export default function Home() {
         </div>
 
         <div className="congressos-section">
-          <div className="congressos-content">
-            <h2>Confira as últimas edições do CONEEAGRI e a edição especial do I ENPEAG.</h2>
-            <p><strong>Leia Mais</strong><br />GreenFields AgroCo, a sprawling commercial farm nestled in the heart of the Midwest, embarked on a transformative journey to overcome complex challenges and enhance its agricultural operations. With hundreds of acres under cultivation and a diverse range of crops, the farm sought a strategic partner to optimize crop management, boost efficiency, and embrace sustainable practices.</p>
-          </div>
+        <div className="congressos-content">
+          <h2>Conheça as últimas edições do CONEEAGRI e a edição especial do I ENPEAG.</h2>
+          <p>
+            <strong>Unindo estudantes de todo o Brasil</strong><br />
+            O CONEEAGRI e o I ENPEAG representam marcos na integração dos estudantes de Engenharia Agrícola, Agrícola e Ambiental e de Biossistemas. Esses eventos promovem a troca de conhecimento, o fortalecimento da rede acadêmica e a valorização das áreas de atuação. Juntos, celebramos a união e o avanço das nossas profissões, com um olhar voltado para inovação e sustentabilidade. 
+           <br /> <button className="button_primary">
+              <Link to={`/congressos`} className="">Todas as edições</Link>
+            </button>
+          </p>
+        </div>
           <div className="congressos-images">
             <div className="main-image">
               <img src={Imagem5} alt="Main Field" />
@@ -147,7 +171,9 @@ export default function Home() {
 
         <div className="contato-section">
           <h2>Entre em Contato</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officia magni ea modi molestias sapiente maxime quia dignissimos. Sint minima nesciunt consequatur nisi inventore recusandae hic dolores, deserunt incidunt maxime.</p>
+          <p className="desktop">Tem alguma dúvida, sugestão ou gostaria de saber mais sobre nossas atividades? Estamos aqui para ouvir você! 
+          Entre em contato com a FEEAGRI e faça parte da construção de um futuro mais conectado e inovador para nossas áreas.</p>
+          <p className="mobile">Tem alguma dúvida, sugestão ou gostaria de saber mais sobre nossas atividades? Estamos aqui para ouvir você!</p>
           <div className="contato-content">
             <div className="contato-form">
               <h3>Envie uma mensagem</h3>

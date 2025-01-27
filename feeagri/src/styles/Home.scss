@@ -2,7 +2,7 @@
 .stats-section {
     display: flex;
     width: 100%;
-    height: 100px;
+    height: auto;
     justify-content: space-between;
     margin-top: 0px;
     flex-wrap: wrap;
@@ -19,7 +19,7 @@
         text-align: center;
         width: 100%;
         line-height: 0;
-        text-shadow: 2px 2px 0 #91ff00, -2px -2px 0 #1a1a1a, 2px -2px 0 #000, -2px 2px 0 #222121; /* Borda simples */
+        text-shadow: 1px 1px 0 #91ff00, -2px -2px 0 #1a1a1a, 2px -2px 0 #000, -2px 2px 0 #222121; /* Borda simples */
       }
   
       p {
@@ -33,18 +33,23 @@
 
 .content {
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
+    margin-top: 75px;
 
     .cardContent {
         width: 90%;
-        height: 70%;
+        height: 90%;
         display: flex;
         margin: auto;
         align-items: center;
         justify-content: center;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        // border-top: 1px solid black;
+        // border-bottom: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(238, 238, 238);
+        box-shadow: rgba(0, 0, 0, 0.267) 0px 1px 4px;
+        transition: 1s ease-in-out;
 
         .text {
           width: 45%;
@@ -55,29 +60,38 @@
 
           h2, h3 {
             text-align: left;
-            font-size: 3rem;
-            font-weight: normal;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: 10px;
+
+            strong {
+              background: linear-gradient(45deg, #006923, #ebfc00); 
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              margin-left: 175px;
+              letter-spacing: 2px;
+            }
           }
 
           p {
             font-size: 1rem;
             line-height: 1.7rem;
           }
+        }
+        &:hover {
+          background-color: rgb(31, 31, 31);
+          background-image: linear-gradient(to right top, #111c2c, #222734, #32333c, #404045, #4e4e4e);
 
-          button {
-            width: 125px;
-            height: 35px;
-            background-color: rgb(20, 20, 20);
-            border: 1px solid whitesmoke;
-            border-radius: 5px;
+          .text {
 
-            a {
-              color: wheat;
-              text-decoration: none;
+            h2, p {
+              color: white;
             }
           }
         }
     }
+
 }
 
 .container {
@@ -130,7 +144,14 @@
       width: 40%;
       border-radius: 10px;
       object-fit: cover;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
     }
+    img:hover {
+      transform: scale(1.05); /* Aplica o efeito de zoom sem alterar o tamanho */
+      /* Ajuste o valor de 1.2 para o nível de zoom desejado */
+  }
 
     .featured-main-content {
       flex: 1;
@@ -138,7 +159,7 @@
 
       h2 {
         font-size: 2.5rem;
-        width: 70%;
+        width: 90%;
         margin-bottom: 1rem;
         font-weight: bold;
       }
@@ -186,12 +207,28 @@
         height: 250px;
         border-radius: 10px;
         object-fit: cover;
-      }
+        transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+    }
+    
+    img:hover {
+        transform: scale(1.1); /* Aplica o efeito de zoom sem alterar o tamanho */
+        /* Ajuste o valor de 1.2 para o nível de zoom desejado */
+    }
 
       h3 {
         font-size: 1.5rem;
         font-weight: bold;
         border-bottom: 0;
+        line-height: 1.4rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.3rem;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       p {
@@ -288,10 +325,6 @@
   align-items: center;
   display: inline-block;
   margin-top: 150px;
-  // background-image: url(./11.jpg);
-  // background-size: cover;
-  // background-position: center;
-
 
   h2 {
     color: wheat;
@@ -364,7 +397,7 @@
     color: white;
   }
 
-  p {
+  .desktop {
     text-align: center;
     width: 80%;
     font-size: 1rem;
@@ -372,6 +405,9 @@
     letter-spacing: 1px;
     margin: auto;
     color: whitesmoke;
+  }
+  .mobile {
+    display: none;
   }
 
   .contato-content {
@@ -418,6 +454,20 @@
       width: 70%;
     }
   }
+
+  .content {
+    .cardContent {
+      .text {
+        h2 {
+          font-size: 4rem;
+          line-height: 4.2rem;
+          strong {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -431,6 +481,93 @@
       }
     }
   }
+
+
+.contadorSection {
+
+  button {
+    margin-left: 38.5%;
+  }
+}
+
+
+  .featured {
+
+     .featured-main {
+
+
+       img {
+
+       }
+
+       .featured-main-content {
+   
+         h2 {
+          font-size: 2rem;
+         }
+         h3 {
+
+         }
+
+         p {
+
+         }
+         span {
+
+         }
+       }
+     }
+
+     .featured-secondary {
+       .card {
+        gap: 5px;
+        padding: 0;
+        width: 98%;
+       }
+     }
+   }
+
+  .content {
+
+    .cardContent {
+      height: auto;
+
+      .text {
+        padding: 25px;
+        width: 50%;
+        
+
+        p {
+          font-size: .9rem;
+          line-height: 1.2rem;
+        }
+      }
+
+      .title {
+        width: 50%;
+      }
+    }
+  }
+
+  .parceiros-section {
+
+    .parceiros-content {
+  
+  
+      .parceiros-texto {
+  
+      }
+    
+      .parceiros-imagem {
+        img {
+          width: 250px ;
+          padding: 15px;
+        }
+      }
+    }
+  
+  }
+  
 
   .congressos-section {
     padding: 0;
@@ -544,6 +681,21 @@
 /* Responsivo para celulares */
 @media (max-width: 550px) {
 
+
+  .stats-section {
+    .card {
+
+
+      h3 {
+       font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
   .content {
     height: auto; 
 
@@ -555,32 +707,74 @@
           padding: 10px;
           margin-bottom: 10px;
           display: inline-block;
+          width: 90%;
 
            h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            margin-left: 20px;
+            line-height: 2.5rem;
+
+            strong {
+              margin-left: 50px;
+            }
           }
 
            p {
-            font-size: 0.85rem;
+            font-size: 1rem;
             line-height: 1.5;
-            margin-top: 0;
+            margin-top: -35px;
+            padding: 20px;
+            width: 100%;
+          }
+
+          button {
+            margin-left: 20px;
           }
         }
       }
     }
     .container {
       .textContainer {
+        height: auto;
         h2 {
-          font-size: 2rem;
+          font-size: 2.4rem;
         }
       }
     }
 
+
+.parceiros-section {
+
+  .parceiros-content {
+
+    display: inline-block;
+    .parceiros-texto {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .parceiros-imagem {
+      width: 100%;
+      margin: auto;
+      margin-top: 75px;
+      img {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+
+}
+
+
     .featured {
-      display: inline;
+     width: 100%;
 
       .featured-main {
         display: inline;
+        margin: auto;
+        width: 90%;
 
         img {
           width: 80%;
@@ -590,7 +784,9 @@
 
         .featured-main-content {
           width: 100%;
+    
           h2 {
+            width: 90%;
             font-size: 1.5rem;
             margin-left: 25px;
           }
@@ -600,19 +796,61 @@
 
           p {
             margin-left: 25px;
-            width: 70%;
+            width: 90%;
+          }
+          span {
+            margin-left: 25px;
+            margin-top: 15px;
+            font-weight: bold;
+            width: 90%;
           }
         }
       }
 
       .featured-secondary {
         display: inline;
+        width: 90%;
+
+        .card {
+          width: 90%;
+        }
       }
+    }
+
+    .contadorSection {
+      width: 100%;
+      height: 600px;
+
+      h2 {
+        font-size: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      button {
+        margin-left: 22%;
+      }
+    
     }
 
     .contato-section {
       padding: 40px;
       height: auto;
       background-color: #f8f8f8;
+
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        margin: auto;
+        color: whitesmoke;
+        display: flex;
+        width: 100%;
+      }
     }
 }

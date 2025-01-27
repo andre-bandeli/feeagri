@@ -67,7 +67,7 @@ export default function Events() {
         </div>
         <div className="container">
           <h2>Congressos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse obcaecati cupiditate quod recusandae, mollitia molestiae, officiis consequuntur error est perferendis blanditiis deserunt exercitationem veritatis eligendi! Odio rerum eum unde!</p>
+          <p>Unindo estudantes e promovendo avanços na Engenharia Agrícola para um futuro mais sustentável.</p>
         </div>
       </div>
       <div className="contadorSection2">
